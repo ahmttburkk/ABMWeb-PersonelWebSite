@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: white;
+    font-family: sans-serif;
+    background-image: url("../images/perfect_wp_ny.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    width: 400px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: auto;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.center .photo img{
+    border-radius: 30%;
+    width: 250px;
+    height: 250px;
+    margin-top: 5%;
+}
+
+.content{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.content h2{
+    color: burlywood;
+    margin-bottom: 10px;
+}
+
+.content h3{
+    color: yellow;
+    margin: 10px auto;
+}
+
+.content h4{
+    color: yellow;
+    margin-top: 10px;
+}
+
+.content p{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.socialmedia i{
+    font-size: 30px;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.socialmedia i:hover{
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 600px){
+    .center{
+        width: 300px;
+        height: auto;
+    }
+}

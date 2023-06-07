@@ -1,0 +1,42 @@
+﻿@using ABMWeb.Models;
+@model AdminPage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="~/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <img src="/images/computer.png" alt="">
+            <h2>Admin Login</h2>
+            @using (Html.BeginForm("Login", "Login", FormMethod.Post))
+            {
+                <div class="txttext">
+                    @*<label asp-for="Username">Kullanıcı adı:</label>*@
+                    <input asp-for="Username" placeholder="Username..." />
+                    <span asp-validation-for="Username"></span>
+                </div>
+                <div class="txtpassword">
+                    @*<label asp-for="Password">Şifre:</label>*@
+                    <input asp-for="Password" type="password" placeholder="Password..." />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div class="error-message" style="color: red">
+                    @Html.ValidationSummary()
+                </div>
+                <input type="submit" class="btnlogin" value="Log In">
+            }
+        </div>
+    </div>
+</body>
+</html>

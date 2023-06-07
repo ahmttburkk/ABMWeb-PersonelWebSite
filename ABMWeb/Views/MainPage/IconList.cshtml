@@ -1,0 +1,9 @@
+﻿        @using ABMWeb.Models
+        @model List<Icon>
+
+        <div class="socialmedia">
+            @foreach (var item in Model)
+            {
+                <a href="@item.IconLink"><i class="@item.IconName"></i></a>
+            }
+        </div>
